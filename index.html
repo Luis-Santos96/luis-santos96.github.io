@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,41 +13,67 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js"></script>
 </head>
 <body>
 
 <nav>
   <div class="logo"><span>&lt;</span>luis.ricardo<span>/&gt;</span></div>
-  <ul>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
+  <div class="nav-right">
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <span id="theme-icon">☀️</span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-content">
-    <div class="hero-tag fade-in">DATA ENGINEER · PORTO, PT</div>
-    <h1 class="fade-in delay-1">Luis Ricardo</h1>
-    <h1 class="fade-in delay-2" style="margin-top:-0.5rem;">
-      <span class="highlight">Data Engineer</span>
-    </h1>
-    <p class="hero-desc fade-in delay-3">
-      Building scalable data pipelines and lakehouse architectures at enterprise scale.
-      I design multi-layer data platforms on Databricks &amp; Delta Lake, refactor legacy pipelines
-      for performance, and ship production-grade data solutions processing millions of rows daily.
-    </p>
-    <div class="hero-links fade-in delay-4">
-      <a href="mailto:luisricardo--96@hotmail.com" class="btn btn-primary">Get in touch ↗</a>
-      <a href="https://github.com/Luis-Santos96" target="_blank" class="btn btn-ghost">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/luisr-santos/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag fade-in">DATA ENGINEER · PORTO, PT</div>
+      <h1 class="fade-in delay-1">Luis Ricardo</h1>
+      <h1 class="fade-in delay-2" style="margin-top:-0.5rem;">
+        <span class="highlight">Data Engineer</span>
+      </h1>
+      <p class="hero-desc fade-in delay-3">
+        Building scalable data pipelines and lakehouse architectures at enterprise scale.
+        I design multi-layer data platforms on Databricks &amp; Delta Lake, refactor legacy pipelines
+        for performance, and ship production-grade data solutions processing millions of rows daily.
+      </p>
+      <div class="hero-links fade-in delay-4">
+        <a href="mailto:luisricardo--96@hotmail.com" class="btn btn-primary">Get in touch ↗</a>
+        <a href="https://github.com/Luis-Santos96" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/luisr-santos/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+      </div>
     </div>
-    <div class="contact-strip fade-in delay-4">
-      <div class="contact-item">📍 Porto, Portugal</div>
-      <div class="contact-item">✉ <a href="mailto:luisricardo--96@hotmail.com">luisricardo--96@hotmail.com</a></div>
-      <div class="contact-item">🔗 <a href="https://github.com/Luis-Santos96" target="_blank">Luis-Santos96</a></div>
+
+    <div class="hero-photo fade-in delay-3">
+      <!-- Replace with your photo: assets/images/profile.jpg -->
+      <img src="assets/images/profile.jpg" alt="Luis Ricardo" />
+      <div class="contact-card">
+        <div class="contact-card-row">
+          <span class="contact-card-label">location</span>
+          <span class="contact-card-value">Porto, PT</span>
+        </div>
+        <div class="contact-card-row">
+          <span class="contact-card-label">email</span>
+          <span class="contact-card-value"><a href="mailto:luisricardo--96@hotmail.com">luisricardo--96@hotmail.com</a></span>
+        </div>
+        <div class="contact-card-row">
+          <span class="contact-card-label">github</span>
+          <span class="contact-card-value"><a href="https://github.com/Luis-Santos96" target="_blank">Luis-Santos96</a></span>
+        </div>
+        <div class="contact-card-row">
+          <span class="contact-card-label">linkedin</span>
+          <span class="contact-card-value"><a href="https://www.linkedin.com/in/luisr-santos/" target="_blank">in/luisr-santos</a></span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -248,7 +274,7 @@
     <div class="project-card">
       <div class="project-num">P-004</div>
       <div class="project-name">portfolio <span class="project-status status-live">LIVE</span></div>
-      <div class="project-desc">Single-page portfolio engineered with vanilla HTML/CSS/JS — no frameworks, no dependencies. Dark theme, responsive design, deployed via GitHub Pages with a professional Git workflow.</div>
+      <div class="project-desc">Single-page portfolio engineered with vanilla HTML/CSS/JS — no frameworks, no dependencies. Dark/light theme with system detection, responsive design, deployed via GitHub Pages.</div>
       <div class="tags" style="margin-bottom:1rem">
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
@@ -264,8 +290,6 @@
   <p style="margin-bottom:0.5rem"><strong style="font-weight:500;">Luis Ricardo</strong> / Data Engineer</p>
   <p><a href="mailto:luisricardo--96@hotmail.com">luisricardo--96@hotmail.com</a> · Porto, PT · 2026</p>
 </footer>
-
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>
