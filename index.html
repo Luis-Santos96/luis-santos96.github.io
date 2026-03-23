@@ -26,9 +26,13 @@
       <li><a href="#roadmap">Roadmap</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-      <span id="theme-icon">☀️</span>
-    </button>
+    <div class="theme-switch" id="theme-toggle" role="button" aria-label="Toggle theme">
+      <svg class="theme-icon icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      <div class="theme-switch-track">
+        <div class="theme-switch-thumb"></div>
+      </div>
+      <svg class="theme-icon icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </div>
   </div>
 </nav>
 
@@ -42,9 +46,10 @@
         <span class="highlight">Data Engineer</span>
       </h1>
       <p class="hero-desc fade-in delay-3">
-        Building scalable data pipelines and lakehouse architectures at enterprise scale.
-        I design multi-layer data platforms on Databricks &amp; Delta Lake, refactor legacy pipelines
-        for performance, and ship production-grade data solutions processing millions of rows daily.
+        Data Engineer with 5+ years of experience building and maintaining data pipelines,
+        from early-stage analytics projects to production-grade platforms at enterprise scale.
+        Currently designing multi-layer data platforms on Databricks &amp; Delta Lake, processing
+        billions of rows across 120+ countries.
       </p>
       <div class="hero-links fade-in delay-4">
         <a href="mailto:luisricardo--96@hotmail.com" class="btn btn-primary">Get in touch ↗</a>
@@ -54,7 +59,6 @@
     </div>
 
     <div class="hero-photo fade-in delay-3">
-      <!-- Replace with your photo: assets/images/profile.jpg -->
       <img src="assets/images/profile.png" alt="Luis Ricardo" />
       <div class="contact-card">
         <div class="contact-card-row">
@@ -83,19 +87,21 @@
   <div class="section-label">01 / exp</div>
   <h2 class="section-title">Work Experience</h2>
 
+  <!-- IWG -->
   <div class="exp-card">
     <div class="exp-header">
       <div>
         <div class="exp-company">IWG plc</div>
         <div class="exp-role">Data Engineer — Andromeda &amp; Contact 360 Platforms</div>
       </div>
-      <div class="exp-meta">Current<br>Full-Time</div>
+      <div class="exp-meta">Current<br>2024 — Present</div>
     </div>
     <ul class="exp-desc">
-      <li>Design and maintain <strong>lakehouse architectures</strong> on Databricks with Delta Lake, implementing multi-layer pipelines (raw → conform → curated → optimise) processing millions of rows</li>
+      <li>Design and maintain <strong>lakehouse architectures</strong> on Databricks with Delta Lake, implementing multi-layer pipelines (raw → conform → curated → optimise) processing billions of rows across <strong>120+ countries</strong></li>
+      <li>Deliver features and maintain data pipelines across <strong>5 distinct business platforms</strong>, working end-to-end from raw ingestion to curated analytics-ready layers</li>
       <li>Systematically refactor legacy data pipelines for performance — achieving measurable compute and wall-clock time reductions across the platform</li>
       <li>Implement <strong>SCD Type 1 &amp; 2</strong> patterns for slowly changing dimensions at enterprise scale, with hash-based change detection and automated schema management</li>
-      <li>Diagnose and resolve production data issues end-to-end — from ingestion layer through to reporting, including overflow errors, missing data gaps, and join cardinality problems</li>
+      <li>Resolve critical production incidents restoring <strong>business-critical dashboards</strong> used daily by C-level executives, ensuring minimal downtime</li>
       <li>Build curated tables and AI/BI dashboards end-to-end, from raw data investigation to stakeholder-facing analytics</li>
     </ul>
     <div class="metrics-row">
@@ -122,6 +128,92 @@
       <span class="tag">Data Factory</span>
       <span class="tag">SCD1/SCD2</span>
       <span class="tag">Git</span>
+      <span class="tag">Power BI</span>
+    </div>
+  </div>
+
+  <!-- DataCentric -->
+  <div class="exp-card">
+    <div class="exp-header">
+      <div>
+        <div class="exp-company">DataCentric</div>
+        <div class="exp-role">Data Engineer</div>
+      </div>
+      <div class="exp-meta">1.5 Yrs<br>2023 — 2024</div>
+    </div>
+    <ul class="exp-desc">
+      <li>Designed and maintained data pipelines ensuring efficient and reliable data processing at scale across multiple client projects</li>
+      <li>Worked across the full <strong>Hadoop ecosystem</strong> — Hive, Apache Impala, and Apache Spark for large-scale data transformations</li>
+      <li>Delivered data solutions for clients across multiple industries working in Agile/Scrum teams</li>
+    </ul>
+    <div class="tags">
+      <span class="tag">Hadoop</span>
+      <span class="tag">Hive</span>
+      <span class="tag">Apache Impala</span>
+      <span class="tag">Apache Spark</span>
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">JIRA</span>
+      <span class="tag">Agile</span>
+    </div>
+  </div>
+
+  <!-- Accenture -->
+  <div class="exp-card">
+    <div class="exp-header">
+      <div>
+        <div class="exp-company">Accenture</div>
+        <div class="exp-role">Data Science Analyst</div>
+      </div>
+      <div class="exp-meta">2 Yrs<br>2021 — 2023</div>
+    </div>
+    <ul class="exp-desc">
+      <li>Worked across multiple client projects in <strong>Energy, Telecom, and Banking</strong> sectors</li>
+      <li>Developed NLP and Deep Learning models for document analysis automation — OCR, sentiment classification, and topic modelling for a major Portuguese bank</li>
+      <li>Defined data segmentation strategies for targeted advertising using PySpark and Hadoop for a telecom operator with <strong>millions of customers</strong></li>
+      <li>Supported Data &amp; AI strategy definition and data governance model design in the energy sector</li>
+    </ul>
+    <div class="tags">
+      <span class="tag">PySpark</span>
+      <span class="tag">Hadoop</span>
+      <span class="tag">Python</span>
+      <span class="tag">NLP</span>
+      <span class="tag">Transformers</span>
+      <span class="tag">BERTopic</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">OCR</span>
+      <span class="tag">SQL</span>
+    </div>
+  </div>
+
+  <!-- NOS -->
+  <div class="exp-card">
+    <div class="exp-header">
+      <div>
+        <div class="exp-company">NOS, SGPS</div>
+        <div class="exp-role">Data Analyst — Internship</div>
+      </div>
+      <div class="exp-meta">Internship<br>2020 — 2021</div>
+    </div>
+    <ul class="exp-desc">
+      <li>First professional experience working with data at scale in one of Portugal's largest telecom operators</li>
+      <li>Curricular internship in conjunction with Universidade do Minho (MSc in Information Systems Engineering &amp; Management)</li>
+    </ul>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Data Analysis</span>
+    </div>
+  </div>
+
+  <!-- Education brief -->
+  <div class="exp-card">
+    <div class="exp-header">
+      <div>
+        <div class="exp-company">Education</div>
+        <div class="exp-role">MSc Information Systems Engineering &amp; Management — Universidade do Minho</div>
+      </div>
+      <div class="exp-meta">Braga<br>Portugal</div>
     </div>
   </div>
 </section>
@@ -153,14 +245,14 @@
       <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
     </div>
     <div class="skill-card">
+      <div class="skill-name">Hadoop Ecosystem</div>
+      <div class="skill-level">ADVANCED · HIVE, IMPALA, SPARK</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-card">
       <div class="skill-name">Git / CI/CD</div>
       <div class="skill-level">ADVANCED · VERSION CONTROL & PIPELINES</div>
       <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-name">AI Agent Orchestration</div>
-      <div class="skill-level">EXPLORING · CLAUDE CODE + RUFLO</div>
-      <div class="skill-bar"><div class="skill-fill" style="width:30%"></div></div>
     </div>
   </div>
 
@@ -168,15 +260,15 @@
     <div class="section-label" style="margin-bottom:0">// tools & platforms</div>
     <div class="tools-grid">
       <div class="tool">🔥 Databricks Workspace</div>
-      <div class="tool">🐍 VS Code / PyCharm</div>
+      <div class="tool">⚡ Apache Spark</div>
+      <div class="tool">🗄 Delta Lake</div>
       <div class="tool">☁️ Azure Portal</div>
       <div class="tool">📊 Power BI</div>
       <div class="tool">🔧 Git / Azure DevOps</div>
-      <div class="tool">🗄 Delta Lake</div>
-      <div class="tool">⚡ Apache Spark</div>
+      <div class="tool">🐍 VS Code / PyCharm</div>
+      <div class="tool">🧪 ipytest</div>
       <div class="tool">🤖 Claude Code</div>
       <div class="tool">🌊 Ruflo v3.5</div>
-      <div class="tool">🧪 ipytest</div>
     </div>
   </div>
 </section>
